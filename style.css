@@ -1,14 +1,183 @@
 body{
   background-color: #031228;
   font-family: "Yu Gotic", sans-serif;
+  color: white;
 }
 
-img{
+#Top img{
   display: block;
   margin: 0 auto;
+  filter:drop-shadow(16px 16px 10px black);
 }
 
 .About{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 30px;
+  display: block;;
+}
+
+.About img{
+  float: left;
+}
+
+#box1{
+  width: 300px;
+  height: 200px;
+  float: right;
+  line-height: 2em;
+}
+
+.Live{
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 100px 30px 100px 30px;
+  display: block;
+  position: relative;
+}
+
+.menu{
+  float:left;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+/* 全部のアニメーションに共通のCSS */
+.cover {
+  width: 200px;
+	text-align: left;
+	padding: 10px;
+	list-style: none;
+	float: left;
+}
+
+.cover .menu {
+    /*  ⬇︎positionをrelativeにしよう  */
+	position: relative;
+}
+
+.cover .menu img {
+    /*  ⬇︎画像を固定しよう  */
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.caption {
+    /*  ⬇︎タイトルと本文を固定しよう  */
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 150px;
+	padding: 10px;
+	background: white;
+	color: #031228;
+}
+
+
+.cover .menu img {
+    /*  画像を文字より手前にする  */
+	z-index: 10;
+
+    /*  ⬇︎画像の動きをなめらかに  */
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.cover .menu:hover img {
+    /*  ⬇︎画像の位置を変える  */
+	-webkit-transform: translateY(-90px);
+	-moz-transform: translateY(-90px);
+	-ms-transform: translateY(-90px);
+	transform: translateY(-90px);
+}
+
+.menu .caption {
+	height: 90px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+}
+
+
+a{
   color: white;
-  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border: 4px solid white;
+  padding: 8px;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+a:hover{
+  background: white;
+  color: #031228;
+  transition: 1s;
+}
+
+.Event{
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 100px 30px 100px 30px;
+  display: block;
+  position: relative;
+}
+
+
+.section-title{
+   font-size: 42px;
+   font-weight:600;
+   text-align: center;
+   text-decoration: underline;
+   margin-bottom: 100px;
+}
+
+.EventPhoto{
+  float:left;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+.Youtube{
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 30px;
+  display: block;;
+  position: relative;
+}
+
+.movie iframe{
+  display: block;
+  margin: auto;
+
+}
+
+.movie p{
+   text-align: center;
+}
+
+.Photo{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 30px;
+  display: block;;
+}
+
+.Contact{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 30px;
+  display: block;;
+  position: relative;
 }
