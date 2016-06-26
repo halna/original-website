@@ -4,21 +4,68 @@ body{
   color: white;
 }
 
+.menu2{
+  color: white;
+  position: relative;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+
+}
+
+.Banditz{
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  border: 10px solid white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.Banditz:hover{
+  background: white;
+  color: #031228;
+  transition: 1s;
+}
+
+.nav{
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 200px;
+  text-align: right;
+}
+
+.menu1{
+  font-size: 40px;
+  color: white;
+}
+
+
+li{
+  margin-bottom: 20px;
+}
+
+
 #Top img{
+  width: 100%;
+  min-height: 270px;
+  min-width: 960px;
   display: block;
   margin: 0 auto;
   filter:drop-shadow(16px 16px 10px black);
+  position: relative;
 }
 
-.About{
+#About{
   width: 600px;
   height: 300px;
   margin: 0 auto;
-  padding: 20px 30px 20px 30px;
+  padding: 70px 30px 90px 30px;
   display: block;;
 }
 
-.About img{
+#About img{
   float: left;
 }
 
@@ -29,7 +76,7 @@ body{
   line-height: 2em;
 }
 
-.Live{
+#Live{
   width: 1000px;
   height: 300px;
   margin: 0 auto;
@@ -71,7 +118,7 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
-  width: 150px;
+  width: 100px;
 	padding: 10px;
 	background: white;
 	color: #031228;
@@ -104,7 +151,7 @@ body{
 }
 
 
-a{
+.more{
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -116,13 +163,13 @@ a{
   bottom: 0;
 }
 
-a:hover{
+.more:hover{
   background: white;
   color: #031228;
   transition: 1s;
 }
 
-.Event{
+#Event{
   width: 1000px;
   height: 300px;
   margin: 0 auto;
@@ -133,7 +180,7 @@ a:hover{
 
 
 .section-title{
-   font-size: 42px;
+   font-size: 60px;
    font-weight:600;
    text-align: center;
    text-decoration: underline;
@@ -147,10 +194,11 @@ a:hover{
 }
 
 
-.Youtube{
-  width: 600px;
+
+#Youtube{
+  width: 1000px;
   margin: 0 auto;
-  padding: 20px 30px 20px 30px;
+  padding: 70px 30px 90px 30px;
   display: block;;
   position: relative;
 }
@@ -158,26 +206,80 @@ a:hover{
 .movie iframe{
   display: block;
   margin: auto;
-
 }
 
-.movie p{
+.movie{
    text-align: center;
+   margin: auto;
+   font-size: 24px;
+   padding: 50px;
 }
 
-.Photo{
-  width: 600px;
-  height: 300px;
+#Photo{
+  width: 1000px;
+  height: 600px;
   margin: 0 auto;
-  padding: 20px 30px 20px 30px;
-  display: block;;
+  padding: 20px 30px 50px 30px;
+  text-align: center;
+  display: block;
+  position: relative;
 }
 
-.Contact{
-  width: 600px;
-  height: 300px;
+#Photo img{
+  padding:10px;
+  text-align: center;
+}
+
+
+#Contact{
+  width: 1000px;
+  height: 500px;
   margin: 0 auto;
   padding: 20px 30px 20px 30px;
   display: block;;
   position: relative;
+}
+
+form{
+  margin: 0 auto;;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div+div{
+  margin-top: 1em;
+}
+
+label{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,textarea{
+  font:1em sans-serif;
+  width: 300px;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,textarea:focus{
+  border-color: #000;
+}
+
+textarea{
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.button{
+  padding-left: 90px;
+}
+
+button{
+  margin-left: 5em;
 }
